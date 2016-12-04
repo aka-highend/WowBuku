@@ -1,2 +1,2 @@
 # WowBuku
-An e-book app sample project, using Realm as the database
+An e-book app sample project, using Realm as the database [On Going]
