@@ -63,7 +63,7 @@ public class BukuRealmController {
         realm.refresh();
     }
 
-    //clear all objects from Buku.class
+    //clear all objects from Book.class
     public void clearAll() {
 
         realm.beginTransaction();
@@ -71,7 +71,7 @@ public class BukuRealmController {
         realm.commitTransaction();
     }
 
-    //find all objects in the Buku.class
+    //find all objects in the Book.class
     public RealmResults<Buku> getBooks() {
 
         return realm.where(Buku.class).findAll();

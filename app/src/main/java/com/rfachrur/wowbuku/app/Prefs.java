@@ -30,6 +30,6 @@ public class Prefs {
         sharedPreferences.edit().putBoolean(PRE_LOAD, totalTime).apply();
     }
 
-    public boolean getpreLoad() { return sharedPreferences.getBoolean(PRE_LOAD, false); }
+    public boolean getPreLoad() { return sharedPreferences.getBoolean(PRE_LOAD, false); }
 
 }
