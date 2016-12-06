@@ -14,6 +14,7 @@ public class WowBukuApp extends Application {
 
     @Override
     public void onCreate() {
+
         super.onCreate();
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder(this)
                 .name(Realm.DEFAULT_REALM_NAME)
@@ -21,6 +22,7 @@ public class WowBukuApp extends Application {
                 .deleteRealmIfMigrationNeeded()
                 .build();
         Realm.setDefaultConfiguration(realmConfiguration);
+
     }
 
 }

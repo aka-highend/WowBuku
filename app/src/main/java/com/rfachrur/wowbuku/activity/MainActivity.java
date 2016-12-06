@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         this.realm = BukuRealmController.with(this).getRealm();
 
         //set toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
 
         setupRecycler();
 
