@@ -81,9 +81,9 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
 
-                                Buku book = new Book();
+                                Buku book = new Buku();
                                 //book.setId(RealmController.getInstance().getBooks().size() + 1);
-                                book.setId(BukuRealmController.getInstance().getBooks().size() + System.currentTimeMillis());
+                                book.setId((int) (BukuRealmController.getInstance().getBooks().size() + System.currentTimeMillis()));
                                 book.setTitle(editTitle.getText().toString());
                                 book.setAuthor(editAuthor.getText().toString());
                                 book.setImageUrl(editThumbnail.getText().toString());
@@ -141,38 +141,38 @@ public class MainActivity extends AppCompatActivity {
 
     private void setRealmData() {
 
-        ArrayList<BukuRealmAdapter> books = new ArrayList<>();
+        ArrayList<Buku> books = new ArrayList<>();
 
         Buku book = new Buku();
-        book.setId(1 + System.currentTimeMillis());
+        book.setId((int) (1 + System.currentTimeMillis()));
         book.setAuthor("Reto Meier");
         book.setTitle("Android 4 Application Development");
         book.setImageUrl("http://api.androidhive.info/images/realm/1.png");
         books.add(book);
 
         book = new Buku();
-        book.setId(2 + System.currentTimeMillis());
+        book.setId((int) (2 + System.currentTimeMillis()));
         book.setAuthor("Itzik Ben-Gan");
         book.setTitle("Microsoft SQL Server 2012 T-SQL Fundamentals");
         book.setImageUrl("http://api.androidhive.info/images/realm/2.png");
         books.add(book);
 
         book = new Buku();
-        book.setId(3 + System.currentTimeMillis());
+        book.setId((int) (3 + System.currentTimeMillis()));
         book.setAuthor("Magnus Lie Hetland");
         book.setTitle("Beginning Python: From Novice To Professional Paperback");
         book.setImageUrl("http://api.androidhive.info/images/realm/3.png");
         books.add(book);
 
         book = new Buku();
-        book.setId(4 + System.currentTimeMillis());
+        book.setId((int) (4 + System.currentTimeMillis()));
         book.setAuthor("Chad Fowler");
         book.setTitle("The Passionate Programmer: Creating a Remarkable Career in Software Development");
         book.setImageUrl("http://api.androidhive.info/images/realm/4.png");
         books.add(book);
 
         book = new Buku();
-        book.setId(5 + System.currentTimeMillis());
+        book.setId((int) (5 + System.currentTimeMillis()));
         book.setAuthor("Yashavant Kanetkar");
         book.setTitle("Written Test Questions In C Programming");
         book.setImageUrl("http://api.androidhive.info/images/realm/5.png");

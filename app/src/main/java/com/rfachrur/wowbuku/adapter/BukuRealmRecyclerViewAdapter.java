@@ -18,6 +18,6 @@ public abstract class BukuRealmRecyclerViewAdapter<T extends RealmObject> extend
 
     public RealmBaseAdapter<T> getRealmAdapter() { return realmBaseAdapter; }
 
-    public void setRealmBaseAdapter(RealmBaseAdapter<T> realmAdapter) { realmBaseAdapter = realmAdapter; }
+    public void setRealmAdapter(RealmBaseAdapter<T> realmAdapter) { realmBaseAdapter = realmAdapter; }
 
 }
