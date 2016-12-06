@@ -22,5 +22,5 @@ public class WowBukuApp extends Application {
                 .build();
         Realm.setDefaultConfiguration(realmConfiguration);
     }
-    
+
 }
