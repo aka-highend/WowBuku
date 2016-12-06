@@ -1,7 +1,9 @@
-package com.rfachrur.wowbuku;
+package com.rfachrur.wowbuku.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.rfachrur.wowbuku.R;
 
 public class MainActivity extends AppCompatActivity {
 
